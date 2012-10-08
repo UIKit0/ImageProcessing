@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9158ED415E8C5D400D960F5 /* guy.png in Resources */ = {isa = PBXBuildFile; fileRef = F9158ED315E8C5D400D960F5 /* guy.png */; };
+		F99091DE15EF2BCE00D710F8 /* GaussianBlur.vsh in Resources */ = {isa = PBXBuildFile; fileRef = F99091DA15EF295E00D710F8 /* GaussianBlur.vsh */; };
+		F99091DF15EF2BCE00D710F8 /* GaussianBlur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = F99091DC15EF296B00D710F8 /* GaussianBlur.fsh */; };
+		F9ACE2CA15E6D7AC003BB6F9 /* Sobel.fsh in Resources */ = {isa = PBXBuildFile; fileRef = F9ACE2BF15E6C278003BB6F9 /* Sobel.fsh */; };
+		F9ACE2CB15E6D7AC003BB6F9 /* Sobel.vsh in Resources */ = {isa = PBXBuildFile; fileRef = F9ACE2C015E6C278003BB6F9 /* Sobel.vsh */; };
+		F9ED75C815E6519F00B513C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9ED75C715E6519F00B513C3 /* UIKit.framework */; };
+		F9ED75CA15E6519F00B513C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9ED75C915E6519F00B513C3 /* Foundation.framework */; };
+		F9ED75CC15E6519F00B513C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9ED75CB15E6519F00B513C3 /* CoreGraphics.framework */; };
+		F9ED75D215E6519F00B513C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9ED75D015E6519F00B513C3 /* InfoPlist.strings */; };
+		F9ED75D415E6519F00B513C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED75D315E6519F00B513C3 /* main.m */; };
+		F9ED75D815E6519F00B513C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED75D715E6519F00B513C3 /* AppDelegate.m */; };
+		F9ED75E015E6534300B513C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED75DF15E6534300B513C3 /* ViewController.m */; };
+		F9ED75E215E6558800B513C3 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9ED75E115E6558800B513C3 /* GLKit.framework */; };
+		F9ED75E415E6558F00B513C3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9ED75E315E6558F00B513C3 /* QuartzCore.framework */; };
+		F9ED75E615E6559400B513C3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9ED75E515E6559400B513C3 /* OpenGLES.framework */; };
+		F9ED75EF15E6562900B513C3 /* GLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED75EE15E6562100B513C3 /* GLProgram.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F9158ED315E8C5D400D960F5 /* guy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guy.png; sourceTree = "<group>"; };
+		F99091DA15EF295E00D710F8 /* GaussianBlur.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = GaussianBlur.vsh; sourceTree = "<group>"; };
+		F99091DC15EF296B00D710F8 /* GaussianBlur.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = GaussianBlur.fsh; sourceTree = "<group>"; };
+		F9ACE2BF15E6C278003BB6F9 /* Sobel.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sobel.fsh; sourceTree = "<group>"; };
+		F9ACE2C015E6C278003BB6F9 /* Sobel.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sobel.vsh; sourceTree = "<group>"; };
+		F9ED75C315E6519F00B513C3 /* SuperIrritated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperIrritated.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9ED75C715E6519F00B513C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F9ED75C915E6519F00B513C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F9ED75CB15E6519F00B513C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F9ED75CF15E6519F00B513C3 /* SuperIrritated-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperIrritated-Info.plist"; sourceTree = "<group>"; };
+		F9ED75D115E6519F00B513C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F9ED75D315E6519F00B513C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F9ED75D515E6519F00B513C3 /* SuperIrritated-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperIrritated-Prefix.pch"; sourceTree = "<group>"; };
+		F9ED75D615E6519F00B513C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F9ED75D715E6519F00B513C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F9ED75DE15E6534300B513C3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F9ED75DF15E6534300B513C3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F9ED75E115E6558800B513C3 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		F9ED75E315E6558F00B513C3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F9ED75E515E6559400B513C3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F9ED75EC15E6561A00B513C3 /* GLCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLCommon.h; sourceTree = "<group>"; };
+		F9ED75ED15E6562100B513C3 /* GLProgram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLProgram.h; sourceTree = "<group>"; };
+		F9ED75EE15E6562100B513C3 /* GLProgram.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLProgram.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9ED75C015E6519F00B513C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9ED75E615E6559400B513C3 /* OpenGLES.framework in Frameworks */,
+				F9ED75E415E6558F00B513C3 /* QuartzCore.framework in Frameworks */,
+				F9ED75E215E6558800B513C3 /* GLKit.framework in Frameworks */,
+				F9ED75C815E6519F00B513C3 /* UIKit.framework in Frameworks */,
+				F9ED75CA15E6519F00B513C3 /* Foundation.framework in Frameworks */,
+				F9ED75CC15E6519F00B513C3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9158ED015E8C5A000D960F5 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				F9ACE2BF15E6C278003BB6F9 /* Sobel.fsh */,
+				F9ACE2C015E6C278003BB6F9 /* Sobel.vsh */,
+				F99091DA15EF295E00D710F8 /* GaussianBlur.vsh */,
+				F99091DC15EF296B00D710F8 /* GaussianBlur.fsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		F9158ED215E8C5AD00D960F5 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				F9158ED315E8C5D400D960F5 /* guy.png */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+		F9ED75B815E6519F00B513C3 = {
+			isa = PBXGroup;
+			children = (
+				F9ED75CD15E6519F00B513C3 /* SuperIrritated */,
+				F9ED75C615E6519F00B513C3 /* Frameworks */,
+				F9ED75C415E6519F00B513C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9ED75C415E6519F00B513C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9ED75C315E6519F00B513C3 /* SuperIrritated.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9ED75C615E6519F00B513C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9ED75E515E6559400B513C3 /* OpenGLES.framework */,
+				F9ED75E315E6558F00B513C3 /* QuartzCore.framework */,
+				F9ED75E115E6558800B513C3 /* GLKit.framework */,
+				F9ED75C715E6519F00B513C3 /* UIKit.framework */,
+				F9ED75C915E6519F00B513C3 /* Foundation.framework */,
+				F9ED75CB15E6519F00B513C3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9ED75CD15E6519F00B513C3 /* SuperIrritated */ = {
+			isa = PBXGroup;
+			children = (
+				F9158ED215E8C5AD00D960F5 /* Textures */,
+				F9158ED015E8C5A000D960F5 /* Shaders */,
+				F9ED75EB15E6560100B513C3 /* OpenGLFiles */,
+				F9ED75D615E6519F00B513C3 /* AppDelegate.h */,
+				F9ED75D715E6519F00B513C3 /* AppDelegate.m */,
+				F9ED75DE15E6534300B513C3 /* ViewController.h */,
+				F9ED75DF15E6534300B513C3 /* ViewController.m */,
+				F9ED75CE15E6519F00B513C3 /* Supporting Files */,
+			);
+			path = SuperIrritated;
+			sourceTree = "<group>";
+		};
+		F9ED75CE15E6519F00B513C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9ED75CF15E6519F00B513C3 /* SuperIrritated-Info.plist */,
+				F9ED75D015E6519F00B513C3 /* InfoPlist.strings */,
+				F9ED75D315E6519F00B513C3 /* main.m */,
+				F9ED75D515E6519F00B513C3 /* SuperIrritated-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9ED75EB15E6560100B513C3 /* OpenGLFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F9ED75EC15E6561A00B513C3 /* GLCommon.h */,
+				F9ED75ED15E6562100B513C3 /* GLProgram.h */,
+				F9ED75EE15E6562100B513C3 /* GLProgram.m */,
+			);
+			name = OpenGLFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9ED75C215E6519F00B513C3 /* SuperIrritated */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9ED75DB15E6519F00B513C3 /* Build configuration list for PBXNativeTarget "SuperIrritated" */;
+			buildPhases = (
+				F9ED75BF15E6519F00B513C3 /* Sources */,
+				F9ED75C015E6519F00B513C3 /* Frameworks */,
+				F9ED75C115E6519F00B513C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperIrritated;
+			productName = SuperIrritated;
+			productReference = F9ED75C315E6519F00B513C3 /* SuperIrritated.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9ED75BA15E6519F00B513C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Rounak Jain";
+			};
+			buildConfigurationList = F9ED75BD15E6519F00B513C3 /* Build configuration list for PBXProject "SuperIrritated" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F9ED75B815E6519F00B513C3;
+			productRefGroup = F9ED75C415E6519F00B513C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9ED75C215E6519F00B513C3 /* SuperIrritated */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9ED75C115E6519F00B513C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99091DE15EF2BCE00D710F8 /* GaussianBlur.vsh in Resources */,
+				F99091DF15EF2BCE00D710F8 /* GaussianBlur.fsh in Resources */,
+				F9ACE2CA15E6D7AC003BB6F9 /* Sobel.fsh in Resources */,
+				F9ACE2CB15E6D7AC003BB6F9 /* Sobel.vsh in Resources */,
+				F9ED75D215E6519F00B513C3 /* InfoPlist.strings in Resources */,
+				F9158ED415E8C5D400D960F5 /* guy.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9ED75BF15E6519F00B513C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9ED75EF15E6562900B513C3 /* GLProgram.m in Sources */,
+				F9ED75D415E6519F00B513C3 /* main.m in Sources */,
+				F9ED75D815E6519F00B513C3 /* AppDelegate.m in Sources */,
+				F9ED75E015E6534300B513C3 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9ED75D015E6519F00B513C3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9ED75D115E6519F00B513C3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9ED75D915E6519F00B513C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F9ED75DA15E6519F00B513C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9ED75DC15E6519F00B513C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperIrritated/SuperIrritated-Prefix.pch";
+				INFOPLIST_FILE = "SuperIrritated/SuperIrritated-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F9ED75DD15E6519F00B513C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperIrritated/SuperIrritated-Prefix.pch";
+				INFOPLIST_FILE = "SuperIrritated/SuperIrritated-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9ED75BD15E6519F00B513C3 /* Build configuration list for PBXProject "SuperIrritated" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9ED75D915E6519F00B513C3 /* Debug */,
+				F9ED75DA15E6519F00B513C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9ED75DB15E6519F00B513C3 /* Build configuration list for PBXNativeTarget "SuperIrritated" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9ED75DC15E6519F00B513C3 /* Debug */,
+				F9ED75DD15E6519F00B513C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9ED75BA15E6519F00B513C3 /* Project object */;
+}
